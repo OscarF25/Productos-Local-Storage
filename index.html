@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Online
+
+    </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<style>
+  body {
+      background-color: rgba(255, 0, 0, 0.742); /* Color de fondo */
+      margin: 0; /* Quita márgenes */
+      height: 100vh; /* Hace que ocupe toda la pantalla */
+  }
+</style>
+    <div class="container mt-4">
+        <h2 class="text-center">D2</h2>
+        <form id="productForm">
+            <div class="mb-3">
+                <label for="productName" class="form-label">Nombre del Producto</label>
+                <input type="text" class="form-control" id="productName" required>
+            </div>
+            <div class="mb-3">
+                <label for="productPrice" class="form-label">Precio</label>
+                <input type="number" class="form-control" id="productPrice" required>
+            </div>
+            <div class="mb-3">
+                <label for="productDescription" class="form-label">Descripción</label>
+                <textarea class="form-control" id="productDescription" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Agregar Producto</button>
+        </form>
+        <table class="table mt-4">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th>Descripción</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="productTable"></tbody>
+        </table>
+    </div>
+    <script src="localstorage.js"></script>
+</body>
+</html>
+
